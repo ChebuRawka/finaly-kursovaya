@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header{
+    height: 100px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #100f0f;
+}
+
+.logo {
+    height: 40px;
+}
+
+.contact-info {
+    display: flex;
+
+}
+
+.contact-info p {
+    color: #fff;
+    width: 300px;
+    margin-top: 40px;
+}
+
+.contact-info button {
+    padding: 10px 20px;
+    background-color: #32CD32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.cfo-section {
+    background: url('images/background.png')   ;
+    background-size: cover;
+    height: 970px;
+    width: 1829px;
+    display: flex;
+
+    background-color: #fff;
+    align-items: center;
+    color: #fff;
+
+}
+
+.cfo-section .content {
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-radius: 10px;
+    padding-left: 100px;
+
+}
+.cfo-section .content h1{
+    color: #fff;
+    font-size: 50px;
+}
+.cfo-section .content p{
+    color: #fff;
+    font-size: 20px;
+}
+
+.highlight {
+    color: #32CD32;
+}
+
+.solution-btn {
+    padding: 10px 30px;
+    background-color: #32CD32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.credit-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.form-container, .partners-container {
+    width: 45%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+select, input[type="number"], input[type="range"] {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"][readonly] {
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.partners-container{
+    width: 350px;
+}
+.opt_bank{
+    width: 130px;
+    height: 10px;
+}
+.tinka{
+    width: 118px;
+    height: 30px;
+}
+.partners img {
+    height: 40px;
+    margin: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #32CD32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
