@@ -1,19 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Unbounded;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
 }
 header{
-    height: 100px;
+
 }
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #100f0f;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 
 .logo {
@@ -22,14 +24,12 @@ header{
 
 .contact-info {
     display: flex;
-
+    padding-top: 20px;
+    justify-content: center;
+    margin-left: 400px;
 }
 
-.contact-info p {
-    color: #fff;
-    width: 300px;
-    margin-top: 40px;
-}
+
 
 .contact-info button {
     padding: 10px 20px;
@@ -41,30 +41,35 @@ header{
 }
 
 nav ul {
-
+    width: 600px;
     display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 nav ul li a {
+    font-family: Unbounded;
+    font-size: 15px;
+
+    display: inline-block;
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
 .cfo-section {
-    background: url('images/background.png')   ;
+    background: url('images/bg.png')   ;
     background-size: cover;
     height: 970px;
-    width: 1829px;
+    width: auto;
     display: flex;
 
     background-color: #fff;
@@ -74,17 +79,20 @@ nav ul li a {
 }
 
 .cfo-section .content {
+    font-family: Unbounded;
     background: rgba(0, 0, 0, 0);
     color: #fff;
     border-radius: 10px;
-    padding-left: 100px;
+    padding-left: 400px;
 
 }
 .cfo-section .content h1{
+
     color: #fff;
     font-size: 50px;
 }
 .cfo-section .content p{
+    font-family: Unbounded;
     color: #fff;
     font-size: 20px;
 }
@@ -92,12 +100,18 @@ nav ul li a {
 .highlight {
     color: #32CD32;
 }
+.politika{
+    color: #32CD32;
+   text-decoration: underline;
+}
 
 .solution-btn {
-    padding: 10px 30px;
-    background-color: #32CD32;
+    font-family: Inter;
+    padding: 20px 70px;
+    background: linear-gradient(to right, #32cd32, #1e90ff);
     color: #fff;
     border: none;
+    font-size: 15px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
@@ -155,30 +169,186 @@ input[type="number"][readonly] {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
 }
-.partners-container{
-    width: 350px;
+.partners-container p {
+
+    font-size: 15px;
 }
-.opt_bank{
-    width: 130px;
-    height: 10px;
-}
-.tinka{
-    width: 118px;
-    height: 30px;
-}
-.partners img {
+.partners img{
+    width: 120px;
     height: 40px;
     margin: 10px;
 }
 
-button {
-    margin-top: 20px;
+.partners-container{
+    width: 350px;
+   text-align: center;
+}
+
+
+
+.reg-btn {
+    font-family: Inter;
+    margin-left: 200px;
     padding: 15px 20px;
     background-color: #32CD32;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+}
+.social-web{
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.social-web img{
+
+    padding-right: 20px;
+    width: 17px;
+    height: 18px;
+}
+
+.partner-btn{
+    font-family: Inter;
+    background: linear-gradient(to right, #32cd32, #1e90ff);
+    margin-top: 20px;
+    padding: 15px 70px;
+
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.advantages {
+    display: flex;
+    padding: 50px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.advantages h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.advantage-items {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.advantage-item {
+    display: flex;
+    background-color: #f9f9f9;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(25% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.advantage-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.advantage-item-text{
+    padding-left: 20px;
+}
+.advantage-item img {
+    padding-top: 20px;
+    max-width: 60px;
+    max-height: 60px;
+    margin-bottom: 10px;
+}
+.advantage-item h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+.advantage-item p {
+    font-size: 1rem;
+    color: #666;
+}
+.steps {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.steps h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.step-items {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+
+    flex-basis: calc(30% - 20px);
+
+}
+.partner-green{
+
+}
+
+
+
+.step-item img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.step-text {
+
+}
+
+.step-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #32cd32;
+}
+
+.step-text p {
+    display: flex;
+    text-align: left;
+    font-size: 1rem;
+    color: #666;
+}
+
+.reg-btn:hover {
+    background-color: #44ff44;
+
+}
+.solution-btn:hover {
+    background: linear-gradient(to right, #00c800, #0081ff);
+}
+.partner-btn:hover {
+    background: linear-gradient(to right, #00c800, #0081ff);
+}
+nav ul li a:hover{
+    color: #cccccc;
+}
+.social-web img:hover{
+
 
 }
