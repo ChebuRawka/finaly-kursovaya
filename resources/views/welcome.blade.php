@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
+
 <header>
     <div class="header-container">
         <img src="images/logo_dark.png" alt="NBS" class="logo">
