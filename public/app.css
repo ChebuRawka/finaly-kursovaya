@@ -401,11 +401,6 @@ nav ul li a:hover{
 .social-web img:hover{
 }
 
-
-
-
-
-
 .consultation-form input {
     width: 90%;
     max-width: 400px;
@@ -414,9 +409,6 @@ nav ul li a:hover{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-
-
 
 .social-media {
     display: flex;

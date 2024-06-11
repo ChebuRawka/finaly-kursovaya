@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const loanTermInput = document.getElementById('loan-term');
     const loanTermRange = document.getElementById('loan-term-range');
     const scrollButton = document.getElementById('scroll-button');
+    const scrolllButton = document.getElementById('scrolll-button');
     const consultationSection = document.getElementById('consultation');
+    const creditSection = document.getElementById('credit');
 
     loanAmountInput.addEventListener('input', () => {
         loanAmountRange.value = loanAmountInput.value;
@@ -24,5 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     scrollButton.addEventListener('click', () => {
         consultationSection.scrollIntoView({ behavior: 'smooth' });
+    });
+    scrolllButton.addEventListener('click', () => {
+        creditSection.scrollIntoView({ behavior: 'smooth' });
     });
 });

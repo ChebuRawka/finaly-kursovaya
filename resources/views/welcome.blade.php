@@ -38,10 +38,10 @@
         <p>Как отследить финансовые потоки? Куда уходят средства?<br>
             Почему постоянно кассовые разрывы? Где найти новые средства для инвестиций?<br>
             Что делать с налоговой нагрузкой?</p>
-        <button class="solution-btn">Получить решение</button>
+        <button id="scrolll-button" class="solution-btn">Получить решение</button>
     </div>
 </section>
-<section class="credit-section">
+<section id="credit" class="credit-section">
     <div class="form-container">
         <h2>Заполните форму</h2>
         <form id="credit-form">
@@ -172,7 +172,6 @@
     </div>
 </section>
 <footer>
-
         <div class="footer-text">
         <img src="images/logo_dark.png" alt="NBS" class="logo">
         <p>Команда наших специалистов имеет огромный опыт работы с различными ситуациями. Мы обладаем широким набором различных инструментов для решения различных задача в сфере финансов, налогового права и экономической безопасности. Основная задача нашей компании – быть максимально эффективными для Вашего бизнеса."</p>
@@ -188,10 +187,6 @@
         </div>
     <div class="finaly-footer">
         <p>© 2020. <span class="highlight">ООО «Новые Бизнес Системы»</span> , ИНН 7723452322, КПП 772501001, ОГРН 1167746558407</p>
-    </div>
-
-    <div>
-        
     </div>
 </footer>
 <script src="script.js"></script>
