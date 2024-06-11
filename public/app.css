@@ -2,7 +2,7 @@ body {
     font-family: Unbounded;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 header{
 
@@ -19,13 +19,13 @@ header{
 }
 
 .logo {
-    height: 40px;
+height: 50px;
 }
 
 .contact-info {
     display: flex;
     padding-top: 20px;
-    justify-content: center;
+    justify-content: left;
     margin-left: 400px;
 }
 
@@ -102,7 +102,7 @@ nav ul li a {
 }
 .politika{
     color: #32CD32;
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 .solution-btn {
@@ -124,44 +124,87 @@ nav ul li a {
     padding: 40px 20px;
     background-color: #fff;
 }
-
-.form-container, .partners-container {
-    width: 45%;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.form-container {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
 }
 
-
-h1, h2 {
+h2 {
+    margin-bottom: 20px;
     color: #333;
+}
+
+.form-group {
     margin-bottom: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
-
-label {
-    margin-top: 10px;
-    color: #555;
+.form-group label{
+    width: 100%;
 }
-
-select, input[type="number"], input[type="range"] {
-    margin-top: 5px;
+.form-group select{
+    width: calc( 100% );
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.form-group input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-input[type="number"][readonly] {
-    border: none;
-    background-color: transparent;
-    color: #000;
-    font-weight: bold;
-    margin-top: 10px;
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: #49ff96;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+input[type="range"]:hover {
+    opacity: 1;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00e861;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00df5e;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00c853;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 .partners {
@@ -182,8 +225,14 @@ input[type="number"][readonly] {
 }
 
 .partners-container{
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
     width: 350px;
-   text-align: center;
+    text-align: center;
 }
 
 
@@ -280,6 +329,7 @@ input[type="number"][readonly] {
     background: #fff;
     padding: 50px 0;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .steps h2 {
@@ -349,6 +399,142 @@ nav ul li a:hover{
     color: #cccccc;
 }
 .social-web img:hover{
+}
 
 
+
+
+
+
+.consultation-form input {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: #00c853;
+}
+.consultation {
+    background-image: url("images/women.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+}
+
+.consultation h2 {
+    margin-left: 85px;
+    color: #ffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.consultation p{
+    max-width: 500px;
+    margin-left: 85px;
+    font-size: 14px;
+    color: #cdcdcd;
+}
+.consultation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+
+}
+
+.consultation input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.consultation button {
+    background: linear-gradient(to right, #32cd32, #1e90ff);
+    padding: 15px 130px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.consultation button:hover {
+    background: linear-gradient(to right, #00c800, #0081ff);
+}
+.consultation-content{
+    margin-left: 200px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px ;
+    text-align: center;
+}
+
+
+.footer-contact h2{
+    color: #ffffff;
+    padding-left: 40px  ;
+}
+.footer-contact p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.footer-contact img{
+    padding-right: 180px;
+    height: 15px;
+}
+.footer-contact p a {
+    color: #00c853;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.linkin{
+    text-decoration: underline;
+}
+.footer-contact p a:hover {
+    color: #00b34a;
+}
+.finaly-footer{
+    text-align: left;
+}
+.finaly-footer p{
+    color: #373737;
+}
+.footer-text{
+    display: flex;
+    margin-right: 100px;
+}
+.footer-text img{
+    padding-top: 30px;
+}
+.footer-text p{
+    padding-top: 10px;
+    padding-left: 100px;
+    text-align: left;
+    max-width: 900px;
+    font-size: 15px;
 }

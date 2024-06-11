@@ -25,8 +25,8 @@
 
             <button class="reg-btn">Зарегистрироваться</button>
             <div class="social-web">
-            <img   src="images/TelegramHeader.png">
-            <img  src="images/WhatsAppHeader.png">
+                <img   src="images/TelegramHeader.png">
+                <img  src="images/WhatsAppHeader.png">
             </div>
         </div>
     </div>
@@ -43,17 +43,27 @@
 </section>
 <section class="credit-section">
     <div class="form-container">
-        <h1>Я ХОЧУ ПОЛУЧИТЬ КРЕДИТ</h1>
-        <form>
-            <label for="credit-type">Вид кредита</label>
-            <select id="credit-type">
-                <option>Кредит наличными</option>
-            </select>
-            <label for="amount">Сумма кредита</label>
-            <input type="number" id="amount" value="1000000">
-            <label for="term">Срок кредита</label>
-            <input type="range" id="term" min="1" max="10" value="7">
-            <input type="number" id="term-value" value="7" readonly>
+        <h2>Заполните форму</h2>
+        <form id="credit-form">
+            <div class="form-group">
+                <label for="credit-type">Вид кредита*</label>
+                <select id="credit-type" name="credit-type" required>
+                    <option value="business">Кредит бизнесу</option>
+                    <option value="personal">Личный кредит</option>
+                    <option value="mortgage">Ипотека</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="loan-amount">Сумма кредита</label>
+                <input type="number" id="loan-amount" name="loan-amount" min="1000000" max="50000000" step="1000000" value="10000000">
+                <input type="range" id="loan-amount-range" min="1000000" max="50000000" step="1000000" value="10000000">
+            </div>
+            <div class="form-group">
+                <label for="loan-term">Срок кредита</label>
+                <input type="number" id="loan-term" name="loan-term" min="1" max="30" step="1" value="7">
+                <input type="range" id="loan-term-range" min="1" max="30" step="1" value="7">
+            </div>
+
         </form>
     </div>
     <div class="partners-container">
@@ -66,7 +76,7 @@
             <img src="images/vtb.png" alt="ВТБ24">
             <img src="images/otkritie.png" alt="Открытие Банк">
         </div>
-        <button class="partner-btn">Заполнить заявку</button>
+        <button id="scroll-button" class="partner-btn">Заполнить заявку</button>
         <p>Нажимая на кнопку, вы даете согласие на обработку <a class="politika">персональных данных</a></p>
     </div>
 </section>
@@ -77,43 +87,43 @@
             <div class="advantage-item">
                 <img src="images/nadega.png" alt="">
                 <div class="advantage-item-text">
-                <h3>Надежно</h3>
-                <p>Мы 13 лет работаем в сфере кредитования физических и юридических лиц</p>
+                    <h3>Надежно</h3>
+                    <p>Мы 13 лет работаем в сфере кредитования физических и юридических лиц</p>
                 </div>
             </div>
             <div class="advantage-item">
                 <img src="images/moneysvin.png" alt="Низкие процентные ставки">
                 <div class="advantage-item-text">
-                <h3>Выгодно</h3>
-                <p>Для вас снизим базовую ставку банка на  0,5 - 2% годовых</p>
+                    <h3>Выгодно</h3>
+                    <p>Для вас снизим базовую ставку банка на  0,5 - 2% годовых</p>
                 </div>
             </div>
             <div class="advantage-item">
                 <img src="images/time.png" alt="Поддержка 24/7">
                 <div class="advantage-item-text">
-                <h3>Быстро</h3>
-                <p>Заявки наших клиентов рассматриваются банком<br> в приоритетном порядке</p>
+                    <h3>Быстро</h3>
+                    <p>Заявки наших клиентов рассматриваются банком<br> в приоритетном порядке</p>
                 </div>
             </div>
             <div class="advantage-item">
                 <img src="images/prof.png" alt="Персональный менеджер">
                 <div class="advantage-item-text">
-                <h3>Профессионально</h3>
-                <p>Мы составим кредитную заявку <br> и соберем пакет необходимых документов</p>
+                    <h3>Профессионально</h3>
+                    <p>Мы составим кредитную заявку <br> и соберем пакет необходимых документов</p>
                 </div>
             </div>
             <div class="advantage-item">
                 <img src="images/ydobno.png" alt="Персональный менеджер">
                 <div class="advantage-item-text">
-                <h3>Удобно</h3>
-                <p>Вам не нужно ездить по банкам и стоять в очередях</p>
+                    <h3>Удобно</h3>
+                    <p>Вам не нужно ездить по банкам и стоять в очередях</p>
                 </div>
             </div>
             <div class="advantage-item">
                 <img src="images/individ.png" alt="Персональный менеджер">
                 <div class="advantage-item-text">
-                <h3>Индивидуально</h3>
-                <p>Ваш персональный менеджер доступен ежедневно с 10 до 22:00</p>
+                    <h3>Индивидуально</h3>
+                    <p>Ваш персональный менеджер доступен ежедневно с 10 до 22:00</p>
                 </div>
             </div>
         </div>
@@ -149,5 +159,41 @@
         </div>
     </div>
 </section>
+<section id="consultation" class="consultation">
+    <div class="consultation-content">
+    <h2>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h2>
+    <p>Укажите ваши данные. Наш специалист свяжется с вами в течении 30 минут</p>
+    <form class="consultation-form">
+        <input type="text" placeholder="Ваше имя">
+        <input type="email" placeholder="Ваш email">
+        <input type="tel" placeholder="Ваш телефон">
+        <button type="submit">Заказать консультацию</button>
+    </form>
+    </div>
+</section>
+<footer>
+
+        <div class="footer-text">
+        <img src="images/logo_dark.png" alt="NBS" class="logo">
+        <p>Команда наших специалистов имеет огромный опыт работы с различными ситуациями. Мы обладаем широким набором различных инструментов для решения различных задача в сфере финансов, налогового права и экономической безопасности. Основная задача нашей компании – быть максимально эффективными для Вашего бизнеса."</p>
+
+            <div class="footer-contact">
+                <h2>НАШИ КОНТАКТЫ</h2>
+            <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+            <p>Телефон: <span class="highlight"> +7 495 123-45-67</span></p>
+            <p>Email: <span class="politika"> info@nbs.ru</span></p>
+                <img src="images/vk_inst.png">
+                <p class="linkin"> Политика конфиденциальности</p>
+            </div>
+        </div>
+    <div class="finaly-footer">
+        <p>© 2020. <span class="highlight">ООО «Новые Бизнес Системы»</span> , ИНН 7723452322, КПП 772501001, ОГРН 1167746558407</p>
+    </div>
+
+    <div>
+        
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
