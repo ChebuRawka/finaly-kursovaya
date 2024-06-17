@@ -1,61 +1,8 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: src="images/background.png" no-repeat center center fixed;
-    background-size: cover;
-}
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-}
+// Variables
+@import 'variables';
 
-.logo img {
-    height: 40px;
-}
-
-.phone p {
-    color: #fff;
-    margin: 0;
-}
-
-.register button {
-    padding: 10px 20px;
-    background-color: #32CD32;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    text-align: center;
-    color: #fff;
-}
-
-.content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.highlight {
-    color: #32CD32;
-}
-
-.solution-btn {
-    padding: 15px 30px;
-    background-color: #32CD32;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';

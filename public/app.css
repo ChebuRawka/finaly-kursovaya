@@ -31,14 +31,7 @@ height: 50px;
 
 
 
-.contact-info button {
-    padding: 10px 20px;
-    background-color: #32CD32;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 
 nav ul {
     width: 600px;
@@ -215,7 +208,7 @@ input[type="range"]::-ms-thumb {
 
 }
 .partners-container p {
-
+    padding-top: 10px;
     font-size: 15px;
 }
 .partners img{
@@ -231,40 +224,99 @@ input[type="range"]::-ms-thumb {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-    width: 350px;
+    width: 450px;
     text-align: center;
 }
 
+.username {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Inter;
+    text-decoration: none;
+}
+.dashboard-btn{
 
+}
+.contact-info button{
+    background-color: rgb(204, 204, 204, 0);
+    border: none;
+}
+.dashboard-btn-img{
+    padding-left: 10px;
+    width: 40px;
+    height: 30px;
+}
+.logout-btn-img{
+ padding-right: 10px;
+    width: 40px;
+    height: 30px;
 
+}
+.logout-btn{
+ margin-left: 15px;
+}
+.dashboard-btn-img:hover{
+
+}
 .reg-btn {
     font-family: Inter;
-    margin-left: 200px;
-    padding: 15px 20px;
+    margin-left: 50px;
+    font-size: 15px;
+    padding: 15px 15px;
     background-color: #32CD32;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+}
+.log-btn{
 
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Inter;
+    margin-left: 10px;
+    padding: 15px 15px;
+    background-color: #32CD32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.log-btn a{
+    color: rgba(0, 179, 74, 0);
 }
 .social-web{
-    padding-top: 10px;
+    padding-top: 0px;
     margin-left: 30px;
 }
 .social-web img{
+    margin-left: 5px;
 
-    padding-right: 20px;
-    width: 17px;
-    height: 18px;
 }
 
+.vkontakte{
+
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+.telegram{
+    text-decoration: none;
+    width: 33px;
+    height: 33px;
+}
+
+.vkontakte:hover{
+
+}
 .partner-btn{
     font-family: Inter;
     background: linear-gradient(to right, #32cd32, #1e90ff);
     margin-top: 20px;
     padding: 15px 70px;
-
+    padding-bottom: 10px;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -276,7 +328,9 @@ input[type="range"]::-ms-thumb {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.container{
+    width: auto;
+}
 .advantages h2 {
     font-size: 40px;
     text-align: center;
@@ -284,6 +338,7 @@ input[type="range"]::-ms-thumb {
 }
 
 .advantage-items {
+
     padding-top: 40px;
     display: flex;
     justify-content: space-around;
@@ -295,7 +350,7 @@ input[type="range"]::-ms-thumb {
 .advantage-item {
     display: flex;
     background-color: #f9f9f9;
-
+    width: 347px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -307,6 +362,8 @@ input[type="range"]::-ms-thumb {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .advantage-item-text{
+    height: 140px;
+
     padding-left: 20px;
 }
 .advantage-item img {
@@ -322,6 +379,7 @@ input[type="range"]::-ms-thumb {
     text-transform: uppercase;
 }
 .advantage-item p {
+    width: 250px;
     font-size: 14px;
     color: #666;
 }
@@ -386,6 +444,10 @@ input[type="range"]::-ms-thumb {
 }
 
 .reg-btn:hover {
+    background-color: #44ff44;
+
+}
+.log-btn:hover {
     background-color: #44ff44;
 
 }
@@ -463,7 +525,7 @@ nav ul li a:hover{
 
 .consultation button {
     background: linear-gradient(to right, #32cd32, #1e90ff);
-    padding: 15px 130px;
+    padding: 15px 82px;
     color: white;
     border: none;
     border-radius: 5px;
@@ -489,7 +551,7 @@ footer {
 
 .footer-contact h2{
     color: #ffffff;
-    padding-left: 40px  ;
+    padding-left: 100px  ;
 }
 .footer-contact p {
     margin-bottom: 10px;
@@ -520,7 +582,12 @@ footer {
     display: flex;
     margin-right: 100px;
 }
+.logo-footer{
+    width: 200px;
+    height: 100px;
+}
 .footer-text img{
+
     padding-top: 30px;
 }
 .footer-text p{
@@ -530,3 +597,8 @@ footer {
     max-width: 900px;
     font-size: 15px;
 }
+
+.footer-logo{
+    height: 100px;
+}
+
