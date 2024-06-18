@@ -57,6 +57,11 @@
 
 </header>
 <section class="cfo-section">
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
     <div class="content">
         <h1>ВАШ <span class="highlight">ЛИЧНЫЙ CFO</span> НА <br> СТРАЖЕ ВАШЕГО БИЗНЕСА</h1>
         <p>Как отследить финансовые потоки? Куда уходят средства?<br>
@@ -183,14 +188,16 @@
         </div>
     </div>
 </section>
+
 <section id="consultation" class="consultation">
     <div class="consultation-content">
     <h2>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h2>
     <p>Укажите ваши данные. Наш специалист свяжется с вами в течении 30 минут</p>
-    <form class="consultation-form">
-        <input type="text" placeholder="Ваше имя">
-        <input type="email" placeholder="Ваш email">
-        <input type="tel" placeholder="Ваш телефон">
+        <form class="consultation-form" action="{{ route('consultation.request') }}" method="POST">
+            @csrf
+        <input type="text" name="name" placeholder="Ваше имя">
+        <input type="email" name="email" placeholder="Ваш email">
+        <input type="tel" name="phone" placeholder="Ваш телефон">
         <button type="submit">Заказать консультацию</button>
     </form>
     </div>

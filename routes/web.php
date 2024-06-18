@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ConsultationRequestController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/admin', [AdminController::class, 'index'])->middleware('auth')->name('admin.index');
+
+Route::post('/consultation-request', [ConsultationRequestController::class, 'store'])->name('consultation.request');
 
 Route::get('/', function () {
     return view('welcome');
