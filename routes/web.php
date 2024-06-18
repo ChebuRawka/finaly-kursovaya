@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConsultationRequestController;
 use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +15,9 @@ use App\Http\Controllers\AdminController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/consultation-requests', [ConsultationRequestController::class, 'index'])->name('admin.consultation-requests.index');
+});
 
 Route::get('/admin', [AdminController::class, 'index'])->middleware('auth')->name('admin.index');
 

@@ -459,6 +459,7 @@ input[type="range"]::-ms-thumb {
 }
 nav ul li a:hover{
     color: #cccccc;
+    text-decoration: none;
 }
 .social-web img:hover{
 }

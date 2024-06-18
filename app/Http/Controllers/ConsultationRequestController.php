@@ -7,6 +7,16 @@ use App\Models\ConsultationRequest;
 
 class ConsultationRequestController extends Controller
 {
+
+    public function index()
+    {
+        // Получение всех заявок
+        $requests = ConsultationRequest::all();
+
+        // Возврат представления с заявками
+        return view('admin.consultation_requests.index', compact('requests'));
+    }
+
     public function store(Request $request)
     {
         // Валидация данных формы
