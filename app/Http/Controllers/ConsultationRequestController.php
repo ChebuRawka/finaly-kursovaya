@@ -17,6 +17,11 @@ class ConsultationRequestController extends Controller
         return view('admin.consultation_requests.index', compact('requests'));
     }
 
+    public function test(){
+
+        return view('admin.consultation_requests.index');
+    }
+
     public function store(Request $request)
     {
         // Валидация данных формы

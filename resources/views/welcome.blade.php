@@ -88,7 +88,7 @@
                 <input type="range" id="loan-amount-range" min="1000000" max="50000000" step="1000000" value="10000000">
             </div>
             <div class="form-group">
-                <label for="loan-term">Срок кредита</label>
+                <label for="loan-term">Срок кредита (лет)</label>
                 <input type="number" id="loan-term" name="loan-term" min="1" max="30" step="1" value="7">
                 <input type="range" id="loan-term-range" min="1" max="30" step="1" value="7">
             </div>
@@ -204,7 +204,7 @@
 </section>
 <footer>
         <div class="footer-text">
-        <img src="images/logo_dark.png" alt="NBS" class="footer-logo">
+       <img src="images/logo_dark.png" alt="NBS" class="footer-logo">
         <p>Команда наших специалистов имеет огромный опыт работы с различными ситуациями. Мы обладаем широким набором различных инструментов для решения различных задача в сфере финансов, налогового права и экономической безопасности. Основная задача нашей компании – быть максимально эффективными для Вашего бизнеса."</p>
 
             <div class="footer-contact">
@@ -217,7 +217,7 @@
             </div>
         </div>
     <div class="finaly-footer">
-        <p>© 2020. <span class="highlight">ООО «Новые Бизнес Системы»</span> , ИНН 7723452322, КПП 772501001, ОГРН 1167746558407</p>
+        <p>© 2024. <span class="highlight">ООО «Новые Бизнес Системы»</span> , ИНН 7723452322, КПП 772501001, ОГРН 1167746558407</p>
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

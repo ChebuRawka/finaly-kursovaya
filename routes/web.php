@@ -19,6 +19,9 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/consultation-requests', [ConsultationRequestController::class, 'index'])->name('admin.consultation-requests.index');
 });
 
+Route::get('/consultation-request/index', [ConsultationRequestController::class, 'index'])->name('consultation-requests.index');
+
+
 Route::get('/admin', [AdminController::class, 'index'])->middleware('auth')->name('admin.index');
 
 Route::post('/consultation-request', [ConsultationRequestController::class, 'store'])->name('consultation.request');
