@@ -14,11 +14,12 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
 
-                    {{ __("Ты успешно авторизировался!") }}
+                    {{ __("Ты успешно авторизован!") }}
+
                 </div>
                 <div class="p-6 text-gray-900 ">
 
-                   <a href="welcome.blade.php"> {{ __("Выход") }} </a>
+
                 </div>
             </div>
         </div>
