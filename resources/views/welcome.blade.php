@@ -163,7 +163,7 @@
         <h2>Этапы работы с нами</h2>
         <div class="step-items">
             <div class="step-item">
-                <img src="images/stepone.png" alt="Оставьте заявку">
+                <img src="images/steptwo.png" alt="Оставьте заявку">
                 <div class="step-text">
                     <h3>1. Оставьте заявку</h3>
                     <p>Вы оставляете заявку на сайте, указывая основные данные </p>
@@ -171,7 +171,7 @@
             </div>
             <img src="images/hz.png">
             <div class="step-item">
-                <img src="images/steptwo.png" alt="Ожидайте звонка">
+                <img src="images/stepone.png" alt="Ожидайте звонка">
                 <div class="step-text">
                     <h3>2. Ожидайте звонка</h3>
                     <p>Наш специалист свяжется с вами для уточнения всех деталей  и подготовки необходимых документов.</p>
@@ -182,7 +182,7 @@
                 <img src="images/stepthree.png" alt="Получите кредит">
                 <div class="step-text">
                     <h3>3. Получите кредит</h3>
-                    <p>После одобрения заявки вы получите кредит  на указанный вами счет.</p>
+                    <p>Делаем повторный созвон и все! <br> Деньги у вас в кармане!</p>
                 </div>
             </div>
         </div>
@@ -191,14 +191,14 @@
 
 <section id="consultation" class="consultation">
     <div class="consultation-content">
-    <h2>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h2>
+    <h2>ОФОРМЛЕНИЕ ЗАЯВКИ</h2>
     <p>Укажите ваши данные. Наш специалист свяжется с вами в течении 30 минут</p>
         <form class="consultation-form" action="{{ route('consultation.request') }}" method="POST">
             @csrf
         <input type="text" name="name" placeholder="Ваше имя">
         <input type="email" name="email" placeholder="Ваш email">
         <input type="tel" name="phone" placeholder="Ваш телефон">
-        <button type="submit">Заказать консультацию</button>
+        <button type="submit">Отправить заявку</button>
     </form>
     </div>
 </section>
