@@ -106,7 +106,7 @@
             <img src="images/otkritie.png" alt="Открытие Банк">
         </div>
         <button id="scroll-button" class="partner-btn">Заполнить заявку</button>
-        <p>Нажимая на кнопку, вы даете согласие на обработку <a class="politika">персональных данных</a></p>
+        <p>Нажимая на кнопку, вы даете согласие на обработку <a href="#" class="politika">персональных данных</a></p>
     </div>
 </section>
 <section class="advantages">
@@ -212,8 +212,8 @@
             <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
             <p>Телефон: <span class="highlight"> +7 495 123-45-67</span></p>
             <p>Email: <span class="politika"> info@nbs.ru</span></p>
-                <img src="images/vk_inst.png">
-                <p class="linkin"> Политика конфиденциальности</p>
+
+                <a href="#" class="linkin"> Политика конфиденциальности</a>
             </div>
         </div>
     <div class="finaly-footer">

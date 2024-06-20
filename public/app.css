@@ -568,6 +568,8 @@ footer {
     transition: color 0.3s;
 }
 .linkin{
+    color: #00b34a;
+    padding-left: 65px;
     text-decoration: underline;
 }
 .footer-contact p a:hover {
