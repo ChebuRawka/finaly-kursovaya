@@ -605,3 +605,9 @@ footer {
     height: 100px;
 }
 
+.alert-danger {
+    margin: 0px;
+}
+.alert-success{
+    margin: 0px;
+}

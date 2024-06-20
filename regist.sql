@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 20 2024 г., 20:03
+-- Время создания: Июн 20 2024 г., 20:57
 -- Версия сервера: 8.0.30
 -- Версия PHP: 8.1.9
 
@@ -49,7 +49,14 @@ INSERT INTO `consultation_requests` (`User_id`, `name`, `email`, `phone`, `creat
 (8, 'lol', 'lololo@mail.ru', '89777280779', '2024-06-20 12:33:53', '2024-06-20 12:33:53', 'pending'),
 (9, 'bublik', 'admin@example.com', '12341241', '2024-06-20 12:45:59', '2024-06-20 12:45:59', 'pending'),
 (11, 'gosha', 'gosha@mail.ru', '13244324342', '2024-06-20 12:55:50', '2024-06-20 12:55:50', 'pending'),
-(12, 'mama', 'mama@mail.ru', '2354234234', '2024-06-20 13:24:12', '2024-06-20 13:28:04', 'approved');
+(12, 'mama', 'mama@mail.ru', '2354234234', '2024-06-20 13:24:12', '2024-06-20 13:28:04', 'approved'),
+(13, 'fafa', 'fafa@mail.ru', '414234324', '2024-06-20 14:29:57', '2024-06-20 14:29:57', 'pending'),
+(14, 'fafa', 'fxckn@mail.ru', '89777280779', '2024-06-20 14:37:28', '2024-06-20 14:37:28', 'pending'),
+(15, '4123432', 'fxckn@mail.ru', '342432432', '2024-06-20 14:37:47', '2024-06-20 14:37:47', 'pending'),
+(16, '4123432', 'fxckn@mail.ru', '4324324', '2024-06-20 14:38:07', '2024-06-20 14:38:07', 'pending'),
+(17, 'bublik', 'admin@example.com', '765757', '2024-06-20 14:40:18', '2024-06-20 14:40:18', 'pending'),
+(18, 'ffffffff', 'fffffff@mail.ru', '1241234324', '2024-06-20 14:52:53', '2024-06-20 14:52:53', 'pending'),
+(19, 'ffffff', 'fffffff@mail.ru', '3254325435', '2024-06-20 14:53:13', '2024-06-20 14:53:13', 'pending');
 
 -- --------------------------------------------------------
 
@@ -173,7 +180,14 @@ INSERT INTO `users` (`User_id`, `name`, `email`, `email_verified_at`, `password`
 (5, 'lolaa', 'loloa@mail.ru', NULL, '$2y$10$IJfYtJLQZMuIpgCWBZh0tuhzyAtsUjutjY5gdGODL1z4vji6Pt2R6', NULL, '2024-06-19 07:32:01', '2024-06-19 07:50:43', 'user'),
 (6, 'papa', 'papa@mail.ru', NULL, '$2y$10$/IPmNcaTH6Z40jGdM6nP/./lio43WqXKwDTCalss4POHsU3h4cS8y', NULL, '2024-06-20 11:06:01', '2024-06-20 11:06:01', 'user'),
 (11, 'gosha', 'gosha@mail.ru', NULL, '$2y$10$PAakNU/MoYxZvvGsY0XlAeBQrnV2jr4BPD31qv5c5FpN3ucfxsguC', NULL, '2024-06-20 12:50:16', '2024-06-20 12:50:16', 'user'),
-(12, 'mama', 'mama@mail.ru', NULL, '$2y$10$1YlNylCZk1RbxynaAyRqW.4pkwSONb2jMW85NAJ1IqK.ZQcYOvCvS', NULL, '2024-06-20 13:23:56', '2024-06-20 13:24:33', 'user');
+(12, 'mama', 'mama@mail.ru', NULL, '$2y$10$1YlNylCZk1RbxynaAyRqW.4pkwSONb2jMW85NAJ1IqK.ZQcYOvCvS', NULL, '2024-06-20 13:23:56', '2024-06-20 13:24:33', 'user'),
+(13, 'fafa', 'fafa@mail.ru', NULL, '$2y$10$q7rNV/V1FEHAr9fXxYvc8.ynbvxmwUTOFQ7QpzioIvHHD86s3mYhq', NULL, '2024-06-20 14:29:37', '2024-06-20 14:29:37', 'user'),
+(14, 'baba', 'baba@mail.ru', NULL, '$2y$10$IlX88JlFl6XwEuHvu9tuluLzxR52ZTCDeXFSboRk09xHA5XtSNa6i', NULL, '2024-06-20 14:41:10', '2024-06-20 14:41:10', 'user'),
+(15, 'asffa', 'dddasdasdasd@mail.ru', NULL, '$2y$10$qUEmwGuV1H7lbrLXrNG5GOrUaJoalDHUgN8XtrGt0q5pJNJey1nWm', NULL, '2024-06-20 14:42:14', '2024-06-20 14:42:14', 'user'),
+(16, 'dfgdfg', 'dfgdfg@mail.ru', NULL, '$2y$10$tf8ksrBitfl.w/a29dTWkehlPmvFwRQVK35wQrSoSoK9gJSgCPz1S', NULL, '2024-06-20 14:42:50', '2024-06-20 14:42:50', 'user'),
+(17, 'dfgdfgfdggfd', 'dfgdfgfdggfd@mail.ru', NULL, '$2y$10$MtFD4exuGiTcS3JkHn6xveguQRfE9VtLqCaJj9VXdeUHKBsLVnixW', NULL, '2024-06-20 14:44:17', '2024-06-20 14:44:17', 'user'),
+(18, 'афафафа', 'fffffff@mail.ru', NULL, '$2y$10$OJW8wkVsK4e7uBw12TXzVu9r0o0OP7p5CIeSsOKyUbjU63Ao7KSpe', NULL, '2024-06-20 14:52:30', '2024-06-20 14:52:30', 'user'),
+(19, 'fafaffa', 'fafaffa@mail.ru', NULL, '$2y$10$Te4aXzcw8gr7JPSuED//0uCiha/0mxAusYeM7VPpNRu8z4.3ou9Aa', NULL, '2024-06-20 14:53:42', '2024-06-20 14:53:42', 'user');
 
 --
 -- Индексы сохранённых таблиц
@@ -233,7 +247,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `consultation_requests`
 --
 ALTER TABLE `consultation_requests`
-  MODIFY `User_id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `User_id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT для таблицы `failed_jobs`
@@ -257,7 +271,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `User_id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `User_id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

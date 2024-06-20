@@ -56,12 +56,20 @@
     </div>
 
 </header>
+@if (session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
+
+
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
 <section class="cfo-section">
-    @if(session('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
+
     <div class="content">
         <h1>ВАШ <span class="highlight">ЛИЧНЫЙ CFO</span> НА <br> СТРАЖЕ ВАШЕГО БИЗНЕСА</h1>
         <p>Как отследить финансовые потоки? Куда уходят средства?<br>
@@ -193,6 +201,7 @@
     <div class="consultation-content">
     <h2>ОФОРМЛЕНИЕ ЗАЯВКИ</h2>
     <p>Укажите ваши данные. Наш специалист свяжется с вами в течении 30 минут</p>
+
         <form class="consultation-form" action="{{ route('consultation.request') }}" method="POST">
             @csrf
         <input type="text" name="name" placeholder="Ваше имя">

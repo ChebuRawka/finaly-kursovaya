@@ -43,6 +43,7 @@ class ConsultationRequestController extends Controller
 
         // Возврат на ту же страницу с сообщением об успехе
         return redirect()->back()->with('success', 'Заявка отправлена успешно!');
+
     }
     // Метод для обновления статуса заявки (для администратора)
     public function updateStatus(Request $request, $id)

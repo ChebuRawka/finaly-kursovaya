@@ -15,7 +15,7 @@ Route::middleware('auth')->group(function () {
 });
 
 // Маршрут для обработки заявок от пользователей
-Route::post('/consultation-request', [ConsultationRequestController::class, 'store'])->name('consultation.request');
+Route::post('/consultation-request', [ConsultationRequestController::class, 'store'])->name('consultation.request')->middleware('auth.custom');
 
 // Маршрут для отображения дашборда пользователя
 Route::middleware(['auth', 'verified'])->group(function () {
