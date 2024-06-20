@@ -25,6 +25,18 @@
                     <td>{{ $request->email }}</td>
                     <td>{{ $request->phone }}</td>
                     <td>{{ $request->created_at }}</td>
+                    <td>{{ $request->status }}</td>
+                    <td>
+                        <form action="{{ route('admin.consultation-requests.update_status', $request->User_id) }}" method="POST">
+                            @csrf
+                            <select name="status" class="form-control" required>
+                                <option value="pending" {{ $request->status == 'pending' ? 'selected' : '' }}>Ожидает</option>
+                                <option value="approved" {{ $request->status == 'approved' ? 'selected' : '' }}>Одобрена</option>
+                                <option value="rejected" {{ $request->status == 'rejected' ? 'selected' : '' }}>Отклонена</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary mt-2">Обновить</button>
+                        </form>
+                    </td>
                 </tr>
             @endforeach
             </tbody>

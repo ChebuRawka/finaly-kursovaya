@@ -53,3 +53,4 @@ $response = $kernel->handle(
 )->send();
 
 $kernel->terminate($request, $response);
+require __DIR__.'/../vendor/autoload.php';

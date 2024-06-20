@@ -17,6 +17,8 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+    protected $primaryKey = 'User_id';
     protected $fillable = [
         'name',
         'email',
@@ -53,5 +55,10 @@ class User extends Authenticatable
     public function isUser()
     {
         return $this->role === 'user';
+    }
+
+    public function consultationRequests()
+    {
+        return $this->hasMany(ConsultationRequest::class, 'User_id');
     }
 }
