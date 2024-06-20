@@ -14,7 +14,7 @@
                             {{ session('success') }}
                         </div>
                     @endif
-                    <h3 class="text-lg font-semibold">Мои заявки на консультацию</h3>
+                    <h3 class="text-lg font-semibold">Моя заявка на консультацию</h3>
                     @forelse ($requests as $request)
                         <div class="border rounded p-4 mb-4">
                             <p>Имя: {{ $request->name }}</p>
