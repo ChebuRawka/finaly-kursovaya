@@ -200,7 +200,7 @@
 <section id="consultation" class="consultation">
     <div class="consultation-content">
     <h2>ОФОРМЛЕНИЕ ЗАЯВКИ</h2>
-    <p>Укажите ваши данные. Наш специалист свяжется с вами в течении 30 минут</p>
+    <p>Укажите ваши данные. Наш специалист свяжется с вами в течении 30 минут <br>(Можно оставить не более 1 заявки)</p>
 
         <form class="consultation-form" action="{{ route('consultation.request') }}" method="POST">
             @csrf
